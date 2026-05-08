@@ -1,7 +1,7 @@
 # CreditLens
 
 **Live demo:** https://utyagi005.github.io/CreditLens/  
-**GitHub release:** https://github.com/utyagi005/CreditLens/releases/tag/v1.0.0
+**GitHub releases:** https://github.com/utyagi005/CreditLens/releases
 
 CreditLens is a premium private credit and infrastructure credit analytics landing experience designed for institutional investment teams. It presents a cinematic GLSL black-hole loading sequence, a liquid-glass fintech visual system, dashboard previews, stress-testing workflows, investment committee memo generation, and portfolio monitoring.
 
