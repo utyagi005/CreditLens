@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { lazy, Suspense } from 'react'
 import {
   BarChart3,
   BrainCircuit,
@@ -21,6 +22,12 @@ import { PortfolioMonitoring } from './components/PortfolioMonitoring'
 import { SectionHeader } from './components/SectionHeader'
 import { StressTesting } from './components/StressTesting'
 import { platformModules, positioningItems } from './data/content'
+
+const DealIntelligenceLab = lazy(() =>
+  import('./components/immersive/DealIntelligenceLab').then((module) => ({
+    default: module.DealIntelligenceLab,
+  })),
+)
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -138,6 +145,9 @@ function LandingPage() {
         <TrustStrip />
         <PlatformModules />
         <DashboardPreview />
+        <Suspense fallback={null}>
+          <DealIntelligenceLab />
+        </Suspense>
         <StressTesting />
         <MemoPreview />
         <PortfolioMonitoring />
